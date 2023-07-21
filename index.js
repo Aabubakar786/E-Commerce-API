@@ -64,9 +64,9 @@ app.post("/login", async (req, resp) => {
 //Add Product Route
 
 app.post("/add-product",async (req,resp)=>{
- let product = new Product(req.body);
- let result = await product.save();
- resp.send(result)
+ let product = new Product(req.body); 
+ let result = await product.save(); 
+ resp.send(result) 
 })
 
 // Get Product listing
